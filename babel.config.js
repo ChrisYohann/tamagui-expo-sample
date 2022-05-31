@@ -10,7 +10,6 @@ module.exports = function (api) {
         {
           runtime: 'automatic',
           development: true,
-          importSource: '@welldone-software/why-did-you-render',
         },
       ],
     ],

@@ -39,4 +39,8 @@ const styles = StyleSheet.create({
   },
 });
 
+// The first line works
+//export default App;
+
+// But this one doesn't
 export default LOAD_STORYBOOK === 'true' ? StoryBookUI : App;
