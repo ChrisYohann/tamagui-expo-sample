@@ -20,6 +20,14 @@ const App = () => {
     return <AppLoading />;
   }
 
+  if (LOAD_STORYBOOK === 'true') {
+    return(
+      <Tamagui.Provider>
+        <StoryBookUI />
+      </Tamagui.Provider>
+    )
+  }
+
   return (
     <Tamagui.Provider>
       <View style={styles.container}>
@@ -39,8 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// The first line works
-//export default App;
-
-// But this one doesn't
-export default LOAD_STORYBOOK === 'true' ? StoryBookUI : App;
+export default App
